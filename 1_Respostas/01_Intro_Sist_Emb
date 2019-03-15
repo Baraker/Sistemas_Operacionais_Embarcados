@@ -6,4 +6,40 @@
 
 	(b) Eletrodomésticos: Controlador de temperatura de uma cafeteira.
 
-	(c) Automação industrial: Sensor de pressão de uma câmara de combustão em uma usina
+	(c) Automação industrial: Controlador de tempo de fermentação de cerveja
+
+4 - 
+	
+Microcontroladores têm muito em comum com processadores de propósito geral – PPG.
+Como um PPG, um microcontrolador é programável e pode acessar uma grande variedade de
+periféricos. Ao contrário de um PPG, um microcontrolador processa a um velocidade de relógio
+menor, tem espaço endereçável de memória menor e seu software não pode ser alterado pelo
+consumidor.
+
+Sistemas de um chip (SOCs) se distinguem de microcontroladores por sua complexidade
+e mais recursos no chip. Microcontroladores muitas vezes requerem circuitos de suporte, como
+processadores de sinal, decodificadores e conversores de sinal. Um sistema em um chip é uma
+peça única de silício que contém todos os circuitos para fornecer um conjunto de funções,
+podendo consistir em mais de um processador. 
+
+Algumas aplicações são tão especializadas que nenhum controlador disponível no
+mercado pode realizar o trabalho. Quando projetistas se deparam com esta situação, eles podem
+escolher uma dentre duas alternativas: eles podem decidir criar um chip a partir do zero ou eles
+podem usar um dispositivo lógico programável (PLD – programmable logic device). Quando a
+velocidade e o tamanho do circuito não são as principais preocupações, um PLD pode ser uma
+boa escolha.
+
+Para dominar o maior mercado para seus produtos, fabricantes de processadores
+embarcados carregam seus chips com o máximo possível de recursos. A pior desvantagem de
+comprar estes processadores complexos prontos é que algumas das funcionalidades do chip
+podem não ser necessárias. Circuitos sem uso não apenas tornam o chip mais lento, mas também
+geram calor e desperdiçam energia preciosa. Em aplicações com fortes restrições, os dispositivos
+lógicos programáveis não são de muita ajuda porque tendem a ser lentos e famintos por energia.
+Em resumo, existem situações nas quais uma abordagem razoável é criar um circuito integrado
+específico para a aplicação (ASIC – application-specific integrated circuit) totalmente
+customizado.
+
+5 -
+
+Usaremos a Raspberry Pi na disciplina pelo fato dela ser uma das mais acessíveis, disponibilizar capacidade 
+de armazenamento e memória suficientes para diversos casos e por ter também periféricos úteis.
