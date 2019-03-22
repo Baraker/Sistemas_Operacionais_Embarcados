@@ -25,82 +25,82 @@ A setas para cima e para baixo conseguem acessar um histórico de comandos escri
 7 - Apresente os respectivos comandos no terminal para: 
 
 (a) Obter mais informações sobre um comando. 
-	comando: man
-	exemplo: man mv
+comando: man
+exemplo: man mv
 
 (b) Apresentar uma lista com os arquivos dentro de uma pasta. 
-	comando: ls
-	exemplo: ls -la
+comando: ls
+exemplo: ls -la
 
 (c) Apresentar o caminho completo da pasta. 
-	comando: pwd
-	exemplo:
+comando: pwd
+exemplo:
 
 (d) Trocar de pasta. 
-	comando: cd
-	exemplo: cd ~ ; cd ..
+comando: cd
+exemplo: cd ~ ; cd ..
 
 (e) Criar uma pasta. 
-	comando: mkdir
-	exemplo: mkdir teste
+comando: mkdir
+exemplo: mkdir teste
 
 (f) Apagar arquivos definitivamente. 
-	comando: rm
-	exemplo: rm teste.txt
+comando: rm
+exemplo: rm teste.txt
 
 (g) Apagar pastas definitivamente. 
-	comando: rm
-	exemplo: rm -R teste
+comando: rm
+exemplo: rm -R teste
 
 (h) Copiar arquivos. 
-	comando: cp
-	exemplo: cp teste.txt ~/Imagens
+comando: cp
+exemplo: cp teste.txt ~/Imagens
 
 (i) Copiar pastas. 
-	comando: cp -r
-	exemplo: cp ~/Documentos/Faculdade/Fotos ~/Imagens
+comando: cp -r
+exemplo: cp ~/Documentos/Faculdade/Fotos ~/Imagens
 
 (j) Mover arquivos. 
-	comando: mv
-	exemplo: mv teste.txt ~/Imagens
+comando: mv
+exemplo: mv teste.txt ~/Imagens
 
 (k) Mover pastas. 
-	comando: mv
-	exemplo: mv ~/Documentos/Faculdade/Fotos ~/Imagens
+comando: mv
+exemplo: mv ~/Documentos/Faculdade/Fotos ~/Imagens
 
 (l) Renomear pastas. 
-	comando: mv
-	exemplo: mv minha_vida minha_vida2
+comando: mv
+exemplo: mv minha_vida minha_vida2
 
 (m) Apresentar o conteúdo de um arquivo. 
-	comando: cat
-	exemplo: cat teste.txt
+comando: cat
+exemplo: cat teste.txt
 
 (n) Apresentar o tipo de um arquivo. 
-	comando: file
-	exemplo: file teste.txt
+comando: file
+exemplo: file teste.txt
 
 (o) Limpar a tela do terminal.
-	comando: clear; Ctrl + L
-	exemplo: 
+comando: clear; Ctrl + L
+exemplo: 
 
 (p) Encontrar ocorrências de palavras-chave em um arquivo-texto. 
-	comando: grep
-	exemplo: grep "palavra" 02_Intro_Linux_1.md
+comando: grep
+exemplo: grep "palavra" 02_Intro_Linux_1.md
 
 (q) Ordenar informações em um arquivo-texto. 
-	comando:
-	exemplo:
+comando:
+exemplo:
 
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
-	comando:
-	exemplo:
+comando:
+exemplo:
 
 (s) Conferir se dois arquivos são iguais. 
-	comando:
-	exemplo:
+comando:
+exemplo:
 
 (t) Escrever algo na tela.
-	comando: cat + grep
-	exemplo: cat teste.txt | grep "palavra"
+comando: cat + grep
+exemplo: cat teste.txt | grep "palavra"
 
