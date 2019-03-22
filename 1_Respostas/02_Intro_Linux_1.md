@@ -89,16 +89,16 @@ comando: grep
 exemplo: grep "palavra" 02_Intro_Linux_1.md
 
 (q) Ordenar informações em um arquivo-texto. 
-comando:
-exemplo:
+comando: sort
+exemplo: sort teste.txt
 
 (r) Substituir ocorrências de palavras-chave em um arquivo-texto. 
-comando:
-exemplo:
+comando: sed
+exemplo: sed -e 's/word/palavra' teste.txt
 
 (s) Conferir se dois arquivos são iguais. 
-comando:
-exemplo:
+comando: diff
+exemplo: diff teste1.txt teste2.txt
 
 (t) Escrever algo na tela.
 comando: cat + grep
