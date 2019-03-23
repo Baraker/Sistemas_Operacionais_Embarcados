@@ -6,18 +6,15 @@ $ echo Ola mundo cruel! > Ola_mundo.txt
 
 2. Apresente o nome de todos os arquivos e pastas na pasta 'root'.
 
-$ sudo -i
-$ cd /root; ls -la
+$ sudo -i; cd /root; ls -la 
 
 3. Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
 
-$ sudo -i
-$ file *
+$ sudo -i; file *
 
 4. Apresente somente as pastas dentro da pasta 'root'.
 
-$ sudo -i
-$ file * | grep directory
+$ sudo -i; file * | grep directory
 
 5. Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos.
 
