@@ -260,3 +260,90 @@ $ echo Ola mundo cruel! Ola universo ingrato! > ola.txt
 $ ./busca_e_conta Ola ola.txt
 $ 'Ola' ocorre 2 vezes no arquivo 'ola.txt'.
 ```
+Para esta tarefa, criei mais duas funções e adicionei na bib_arqs.c e escrevi uma nova função para as chamar corretamente e implementar a 'busca_e_conta':
+
+Função principal:  
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "bib_arqs.h"
+
+int main(int argc, const char * argv[]) {
+
+	char *text, *arquivo, *word;
+	int n, ocorrencias;
+
+	if (argc < 2)
+	{
+		printf("Insira Argumentos de Entrada!\n" );
+		return 0;
+	}
+
+	n = strlen(argv[1]);
+	word = (char*)malloc(n*sizeof(char));
+	strcpy(word, argv[1]);
+
+	n = strlen(argv[2]);
+	arquivo = (char*)malloc(n*sizeof(char));
+	strcpy(arquivo, argv[2]);
+
+	text = le_arq_texto(arquivo);
+	ocorrencias = Search_and_count(text, word);
+
+	printf("'%s' ocorre %d vezes no arquivo '%s'", word, ocorrencias, arquivo);
+
+	free(arquivo);
+	free(text);
+	return 0;
+
+}
+```
+
+Outras duas funções adicionadas:
+```c
+
+
+int Search_and_count(char *text, char *word) {
+
+	char *token, *frag_data;
+	int len_word, count = 0;
+
+	len_word = strlen(word);
+
+	frag_data = (char*)malloc(strlen(text)*sizeof(char));
+	strcpy(frag_data, text);
+
+	token = strtok(frag_data, " ");
+	if (string_comp(token, word, len_word))
+	{
+		count++;
+	}
+	while(token != NULL){
+		token = strtok(NULL, " ");
+		if(token != NULL){
+			if (string_comp(token, word, len_word))
+			{
+				count++;
+			}
+		}
+	}
+
+	free(token);
+	free(frag_data);
+	
+	return count;
+}
+```
+
+```c
+int string_comp(char *str1, char *str2, int len_word){
+	int flag = 1;
+	for (int i = 0; i < len_word; ++i)
+	{
+		if(str1[i] != str2[i])
+			flag = 0;
+	}
+	return flag;
+}
+```
