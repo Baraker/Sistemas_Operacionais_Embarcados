@@ -32,7 +32,7 @@ int main(int argc, const char *argv[])
  		{
  			sleep(1);
  			printf("\n");
-			func_fork1(i+1);
+			func_fork(i+1);
 		}
  	}
 
