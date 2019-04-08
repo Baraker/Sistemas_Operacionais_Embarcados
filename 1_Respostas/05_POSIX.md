@@ -51,7 +51,7 @@ int main(int argc, const char * argv[]) {
 	int fp;
 	char aux = 0;
 	char *nome, *idade, *string;
-	char aux_print[10];
+	char aux_print[100];
 	int i=0, n;
 
 	nome = (char*)malloc(sizeof(char));
@@ -74,14 +74,8 @@ int main(int argc, const char * argv[]) {
         printf("\nNao consigo abrir o arquivo ! ");
         exit(1); }
 
-	strcpy(aux_print, "Nome: ");
-	file_print(aux_print, fp);
-	file_print(nome, fp);
-	strcpy(aux_print, "\nIdade: ");
-	file_print(aux_print, fp);
-	file_print(idade, fp);
-	strcpy(aux_print, "\n");
-	file_print(aux_print, fp);
+    sprintf(aux_print, "Nome: %s\nIdade: %s\n\n", nome, idade);
+    file_print(aux_print, fp);
 	
 	free(nome);
 	free(idade);
@@ -128,7 +122,7 @@ int main(int argc, const char * argv[]) {
 	int fp;
 	char aux = 0;
 	char *nome, *idade, *string;
-	char aux_print[10];
+	char aux_print[100];
 	int i=0, n, id;
 
 	if (argc < 2)
@@ -156,14 +150,8 @@ int main(int argc, const char * argv[]) {
         printf("\nNao consigo abrir o arquivo ! ");
         exit(1); }
 
-	strcpy(aux_print, "Nome: ");
-	file_print(aux_print, fp);
-	file_print(nome, fp);
-	strcpy(aux_print, "\nIdade: ");
-	file_print(aux_print, fp);
-	file_print(idade, fp);
-	strcpy(aux_print, "\n");
-	file_print(aux_print, fp);
+    sprintf(aux_print, "Nome: %s\nIdade: %s\n\n", nome, idade);
+    file_print(aux_print, fp);
 
 	free(nome);
 	free(idade);
